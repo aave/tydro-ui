@@ -233,7 +233,7 @@ export const DashboardTopPanel = () => {
               </Box>
 
               <Button
-                variant="gradient"
+                variant="glass"
                 size="small"
                 onClick={() => openClaimRewards()}
                 sx={{ minWidth: 'unset', ml: { xs: 0, xsm: 2 } }}
