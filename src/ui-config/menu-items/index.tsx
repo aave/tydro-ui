@@ -29,15 +29,15 @@ export const navigation: Navigation[] = [
     title: t`Markets`,
     dataCy: 'menuMarkets',
   },
-  {
-    link: ROUTES.governance,
-    title: t`Governance`,
-    dataCy: 'menuGovernance',
-    // isVisible: () =>
-    //   process.env.NEXT_PUBLIC_ENABLE_GOVERNANCE === 'true' &&
-    //   process.env.NEXT_PUBLIC_ENV === 'prod' &&
-    //   !ENABLE_TESTNET,
-  },
+  // {
+  //   link: ROUTES.governance,
+  //   title: t`Governance`,
+  //   dataCy: 'menuGovernance',
+  //   // isVisible: () =>
+  //   //   process.env.NEXT_PUBLIC_ENABLE_GOVERNANCE === 'true' &&
+  //   //   process.env.NEXT_PUBLIC_ENV === 'prod' &&
+  //   //   !ENABLE_TESTNET,
+  // },
 
   {
     link: ROUTES.faucet,

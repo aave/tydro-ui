@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from '@heroicons/react/outline';
+// import { ChevronDownIcon } from '@heroicons/react/outline';
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
 import {
@@ -143,14 +143,14 @@ export const MarketSwitcher = () => {
     setCurrentMarket(selectedMarket);
   };
 
-  const marketBlurbs: { [key: string]: JSX.Element } = {
-    proto_mainnet_v3: (
-      <Trans>Main Ethereum market with the largest selection of assets and yield options</Trans>
-    ),
-    proto_lido_v3: (
-      <Trans>Optimized for efficiency and risk by supporting blue-chip collateral assets</Trans>
-    ),
-  };
+  // const marketBlurbs: { [key: string]: JSX.Element } = {
+  //   proto_mainnet_v3: (
+  //     <Trans>Main Ethereum market with the largest selection of assets and yield options</Trans>
+  //   ),
+  //   proto_lido_v3: (
+  //     <Trans>Optimized for efficiency and risk by supporting blue-chip collateral assets</Trans>
+  //   ),
+  // };
 
   return (
     <TextField
@@ -196,7 +196,7 @@ export const MarketSwitcher = () => {
                       ? 'Instance'
                       : ' Market'}
                   </Typography>
-                  {market.v3 ? (
+                  {/* {market.v3 ? (
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                       <Box
                         sx={{
@@ -244,11 +244,11 @@ export const MarketSwitcher = () => {
                         <ChevronDownIcon />
                       </SvgIcon>
                     </Box>
-                  )}
+                  )} */}
                 </Box>
               </Box>
 
-              {marketBlurbs[currentMarket] && (
+              {/* {marketBlurbs[currentMarket] && (
                 <Typography
                   sx={{
                     color: 'common.white',
@@ -262,7 +262,7 @@ export const MarketSwitcher = () => {
                 >
                   {marketBlurbs[currentMarket]}
                 </Typography>
-              )}
+              )} */}
             </Box>
           );
         },
@@ -316,7 +316,7 @@ export const MarketSwitcher = () => {
               height: '36px',
               background: theme.palette.primary.main,
               border: `1px solid ${
-                theme.palette.mode === 'dark' ? 'rgba(235, 235, 237, 0.12)' : '#1B2030'
+                theme.palette.mode === 'dark' ? 'rgba(235, 235, 237, 0.12)' : '#031C43'
               }`,
               borderRadius: '6px',
               marginTop: '16px',

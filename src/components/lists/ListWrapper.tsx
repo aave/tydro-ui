@@ -103,6 +103,9 @@ export const ListWrapper = ({
           py: { xs: 3.5, xsm: 4 },
           display: 'flex',
           alignItems: 'center',
+          // background: '#FFFFFF',
+          // opacity: 0.05,
+          background: 'rgba(255, 255, 255, 0.05)',
           justifyContent: 'space-between',
           ...wrapperSx,
         }}

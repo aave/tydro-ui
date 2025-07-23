@@ -785,10 +785,6 @@ msgstr "This asset is frozen due to an Aave community decision. <0>More details<
 msgid "Faucet"
 msgstr "Faucet"
 
-#: src/components/MarketSwitcher.tsx
-msgid "Optimized for efficiency and risk by supporting blue-chip collateral assets"
-msgstr "Optimized for efficiency and risk by supporting blue-chip collateral assets"
-
 #: src/components/transactions/Bridge/BridgeFeeTokenSelector.tsx
 msgid "The fee includes the gas cost to complete the transaction on the destination chain and the fee paid to Chainlink CCIP service providers. You can chose to pay in the network token or GHO. <0>Learn more</0>"
 msgstr "The fee includes the gas cost to complete the transaction on the destination chain and the fee paid to Chainlink CCIP service providers. You can chose to pay in the network token or GHO. <0>Learn more</0>"
@@ -900,10 +896,6 @@ msgstr "Collateralization"
 #: src/components/transactions/FlowCommons/Error.tsx
 msgid "You can report incident to our <0>Discord</0> or<1>Github</1>."
 msgstr "You can report incident to our <0>Discord</0> or<1>Github</1>."
-
-#: src/components/MarketSwitcher.tsx
-msgid "Main Ethereum market with the largest selection of assets and yield options"
-msgstr "Main Ethereum market with the largest selection of assets and yield options"
 
 #: src/components/ReserveSubheader.tsx
 #: src/components/transactions/FlowCommons/TxModalDetails.tsx
@@ -1953,7 +1945,6 @@ msgstr "Amount to Bridge"
 msgid "Please always be aware of your <0>Health Factor (HF)</0> when partially migrating a position and that your rates will be updated to V3 rates."
 msgstr "Please always be aware of your <0>Health Factor (HF)</0> when partially migrating a position and that your rates will be updated to V3 rates."
 
-#: src/layouts/components/NavItems.tsx
 #: src/layouts/components/StakingMenu.tsx
 #: src/layouts/components/StakingMenu.tsx
 msgid "Umbrella"
@@ -2253,10 +2244,6 @@ msgstr "Available"
 #: src/modules/governance/proposal/VoteInfo.tsx
 msgid "You did not participate in this proposal"
 msgstr "You did not participate in this proposal"
-
-#: src/ui-config/menu-items/index.tsx
-msgid "Governance"
-msgstr "Governance"
 
 #: src/components/TitleWithSearchBar.tsx
 #: src/modules/history/HistoryWrapperMobile.tsx
@@ -2583,7 +2570,6 @@ msgstr "You voted {0}"
 msgid "Borrowable"
 msgstr "Borrowable"
 
-#: src/layouts/components/NavItems.tsx
 #: src/layouts/components/StakingMenu.tsx
 #: src/layouts/components/StakingMenu.tsx
 #: src/layouts/MobileMenu.tsx

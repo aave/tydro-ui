@@ -66,7 +66,7 @@ export const DashboardContentWrapper = ({ isBorrow }: DashboardContentWrapperPro
                   trackEvent(AUTH.VIEW_TX_HISTORY);
                 }}
                 component="a"
-                variant="surface"
+                variant="glass"
                 size="small"
               >
                 <Trans>View Transactions</Trans>

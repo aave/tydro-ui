@@ -121,6 +121,7 @@ declare module '@mui/material/Button' {
   interface ButtonPropsVariantOverrides {
     surface: true;
     gradient: true;
+    glass: true;
   }
 }
 
@@ -182,11 +183,11 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         highlight: getColor('#383D51', '#C9B3F9'),
       },
       background: {
-        default: getColor('#F1F1F3', '#1B2030'),
-        paper: getColor('#FFFFFF', '#292E41'),
+        default: getColor('#F1F1F3', '#031C43'),
+        paper: getColor('#FFFFFF', '#031C43'),
         surface: getColor('#F7F7F9', '#383D51'),
         surface2: getColor('#F9F9FB', '#383D51'),
-        header: getColor('#2B2D3C', '#1B2030'),
+        header: getColor('#2B2D3C', '#031C43'),
         disabled: getColor('#EAEBEF', '#EBEBEF14'),
       },
       divider: getColor('#EAEBEF', '#EBEBEF14'),
@@ -460,6 +461,23 @@ export function getThemedComponents(theme: Theme) {
             style: {
               background: theme.palette.background.surface,
               borderColor: theme.palette.divider,
+            },
+          },
+          {
+            props: { variant: 'glass' },
+            style: {
+              backgroundColor: 'rgba(255, 255, 255, 0.05)',
+              color: theme.palette.text.primary,
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              '&:hover, &.Mui-focusVisible': {
+                backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                borderColor: 'rgba(255, 255, 255, 0.15)',
+              },
+              '&:disabled': {
+                backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                borderColor: 'rgba(255, 255, 255, 0.05)',
+                color: theme.palette.text.disabled,
+              },
             },
           },
         ],

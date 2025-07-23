@@ -63,7 +63,7 @@ export function SettingsMenu() {
   return (
     <>
       <Button
-        variant="surface"
+        variant="glass"
         aria-label="settings"
         id="settings-button"
         aria-controls={settingsOpen ? 'settings-menu' : undefined}
@@ -85,7 +85,12 @@ export function SettingsMenu() {
         anchorEl={anchorEl}
         open={settingsOpen}
         onClose={handleClose}
-        sx={{ '.MuiMenuItem-root.Mui-disabled': { opacity: 1 } }}
+        sx={{
+          '.MuiMenuItem-root.Mui-disabled': { opacity: 1 },
+          '.MuiPaper-root': {
+            backgroundColor: (theme) => theme.palette.background.paper,
+          },
+        }}
         keepMounted={true}
       >
         <MenuItem disabled sx={{ mb: '4px' }}>
@@ -112,6 +117,11 @@ export function SettingsMenu() {
         anchorEl={anchorEl}
         open={languagesOpen}
         onClose={handleClose}
+        sx={{
+          '.MuiPaper-root': {
+            backgroundColor: (theme) => theme.palette.background.paper,
+          },
+        }}
         keepMounted={true}
       >
         <LanguagesList onClick={handleCloseLanguage} component={MenuItem} />

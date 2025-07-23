@@ -217,7 +217,6 @@ export const SupplyAssetsListItemDesktop = ({
           }
         />
       )}
-
       <ListAPRColumn
         value={Number(supplyAPY)}
         market={currentMarket}
@@ -237,7 +236,6 @@ export const SupplyAssetsListItemDesktop = ({
           />
         )}
       </ListColumn>
-
       <ListButtonsColumn>
         <Button
           disabled={disableSupply}
@@ -254,7 +252,7 @@ export const SupplyAssetsListItemDesktop = ({
             minWidth: 0,
             px: 4,
           }}
-          variant="outlined"
+          variant="glass"
           onClick={handleClick}
           aria-controls={open ? 'basic-menu' : undefined}
           aria-haspopup="true"

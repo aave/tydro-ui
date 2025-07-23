@@ -101,9 +101,9 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
             }}
           >
             <Button
-              variant="surface"
+              variant="glass"
               size="medium"
-              color="primary"
+              // color="primary"
               startIcon={
                 <SvgIcon sx={{ fontSize: '20px' }}>
                   <ArrowBackRoundedIcon />

@@ -133,7 +133,7 @@ export const SuppliedPositionsListItem = ({
         )}
         <Button
           disabled={disableWithdraw}
-          variant="outlined"
+          variant="glass"
           onClick={() => {
             openWithdraw(underlyingAsset, currentMarket, reserve.name, 'dashboard');
           }}

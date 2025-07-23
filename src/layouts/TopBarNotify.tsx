@@ -18,6 +18,7 @@ interface TopBarNotifyProps {
   bannerVersion: string;
   icon?: string;
   customIcon?: ReactNode;
+  showActionButton?: boolean;
 }
 
 export default function TopBarNotify({
@@ -27,6 +28,7 @@ export default function TopBarNotify({
   bannerVersion,
   icon,
   customIcon,
+  showActionButton = true,
 }: TopBarNotifyProps) {
   const { breakpoints } = useTheme();
   const md = useMediaQuery(breakpoints.down('md'));
@@ -68,12 +70,13 @@ export default function TopBarNotify({
       <AppBar
         component="header"
         sx={{
-          padding: `8px, 12px, 8px, 12px`,
-          background: (theme) => theme.palette.gradients.newGradient,
+          padding: `8px, 24px, 8px, 12px`,
+          background: '#7137EF',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           borderRadius: 0,
+          height: '36px',
         }}
         position="static"
       >
@@ -84,10 +87,21 @@ export default function TopBarNotify({
             justifyContent: 'center',
             alignItems: 'center',
             width: '100%',
+            minHeight: '36px',
+            height: '36px',
+            padding: 0,
           }}
           variant="dense"
         >
-          <Box sx={{ padding: md ? '20px 10px' : '', paddingRight: 0 }}>
+          <Box
+            sx={{
+              padding: md ? '0 10px' : '0 12px',
+              paddingRight: 0,
+              display: 'flex',
+              alignItems: 'center',
+              height: '100%',
+            }}
+          >
             <Typography
               sx={{ display: 'flex', alignContent: 'center', alignItems: 'center' }}
               component="div"
@@ -98,7 +112,7 @@ export default function TopBarNotify({
 
               {icon && !sm ? <MarketLogo sx={{ ml: 2 }} size={32} logo={icon} /> : ''}
 
-              {learnMoreLink && md ? (
+              {learnMoreLink && showActionButton && md ? (
                 typeof learnMoreLink === 'string' ? (
                   <Link
                     sx={{ color: 'white', textDecoration: 'underline', paddingLeft: 2 }}
@@ -129,7 +143,7 @@ export default function TopBarNotify({
           </Box>
 
           <Box>
-            {!md && learnMoreLink ? (
+            {!md && learnMoreLink && showActionButton ? (
               typeof learnMoreLink === 'string' ? (
                 <Button
                   component="a"

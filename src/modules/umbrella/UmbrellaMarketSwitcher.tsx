@@ -282,7 +282,7 @@ export const MarketSwitcher = () => {
               height: '36px',
               background: theme.palette.primary.main,
               border: `1px solid ${
-                theme.palette.mode === 'dark' ? 'rgba(235, 235, 237, 0.12)' : '#1B2030'
+                theme.palette.mode === 'dark' ? 'rgba(235, 235, 237, 0.12)' : '#031C43'
               }`,
               borderRadius: '6px',
               marginTop: '16px',

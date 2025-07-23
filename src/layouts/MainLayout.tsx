@@ -39,8 +39,9 @@ export function MainLayout({ children }: { children: ReactNode }) {
     <>
       <TopBarNotify
         learnMoreLink={handleLearnMore}
-        notifyText="Swaps are now live on Sonic"
+        notifyText="New USDG markets now available on Tydro. Earn 4.1% by supplying assets now →"
         bannerVersion={APP_BANNER_VERSION}
+        showActionButton={false}
       />
 
       <AppHeader />

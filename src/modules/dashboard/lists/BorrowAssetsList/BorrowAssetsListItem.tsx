@@ -104,7 +104,7 @@ export const BorrowAssetsListItem = ({
           <Trans>Borrow</Trans>
         </Button>
         <Button
-          variant="outlined"
+          variant="glass"
           component={Link}
           href={ROUTES.reserveOverview(underlyingAsset, currentMarket)}
           onClick={() => {
